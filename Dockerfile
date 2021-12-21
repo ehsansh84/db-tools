@@ -6,4 +6,5 @@ RUN echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mon
 RUN apt-get update
 RUN apt-get install -y mongodb-org-shell mongodb-org-tools
 RUN apt-get install -y mysql-client
+RUN apt-get install -y postgresql-client
 CMD ["/bin/bash"]
